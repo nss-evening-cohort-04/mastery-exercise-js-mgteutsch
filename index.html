@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teutsch JS Quiz</title>
+</head>
+<body>
+
+<h1>Tree Builder</h1>
+
+<form>
+	<input type="number" name="Rows Input" placeholder="Numbers Only" id='rowinput'>
+		How many rows do you want?
+	<br/>
+	<br/>
+	<input type="number" name="Character Input" placeholder="Valid Characters" id='characterinput'>
+		What character would you like to see?
+</form>
+
+<h4>***The above items do not work yet; go into the HTML and adjust var rows and var character to adjust tree!***</h4>
+
+<br/>
+<hr/>
+<br/>
+
+<center>
+
+<script>
+
+var rows = 17
+var character = "*"
+
+for (var i = 0; i < rows; i++) {
+    for (var c = 0; c < (2*rows - 1); c++) {
+         if (Math.abs(4-c)<=i) {
+             document.write(character);
+         }
+         else {
+             document.write(" ");
+         }
+    }
+    document.write("<br/>");
+} 
+</script>
+
+</center>
+
+
+
+
+<script src="quiz.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
