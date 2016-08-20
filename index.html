@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teutsch JS Quiz</title>
+</head>
+<body>
+
+<h1>Tree Builder</h1>
+
+<section>
+	<input type="text" name="Rows Input" placeholder="Numbers Only" id='rowinput'>
+		How many rows do you want?
+	<br/>
+	<br/>
+	<input type="text" name="Character Input" placeholder="Valid Characters" id='characterinput'>
+		What character would you like to see?
+	<br/>
+	<br/>
+	<input type="submit" name="Submit Tree" value="Submit" id="submit">
+	<input type="button" name="Clear" value="Clear" id="clear">
+</section>
+
+
+<br/>
+<hr/>
+<br/>
+
+<center>
+
+<div id='treeOutput'>
+
+</div>
+<!--
+<div id="treeHTMLOutput">
+<script>
+	var rows = 20;
+	var character = "*";
+	function treeBuilderHTML() { 
+		for (var i = 0; i < rows; i++) {
+		    for (var c = 0; c < (2*rows - 1); c++) {
+		         if (Math.abs((rows-1)-c)<=i) {
+		             document.write(character);
+		         }
+		         else {
+		             document.write(" ");
+		         }
+		    }
+		    document.write("<br/>");
+		}
+	}
+	treeBuilderHTML();
+</script>
+</div>
+-->
+</center>
+
+
+
+<script type="text/javascript" src="quizagain.js"></script>
+<!--<script src="quiz.js" type="text/javascript" charset="utf-8" async defer></script>-->
+</body>
+</html>
